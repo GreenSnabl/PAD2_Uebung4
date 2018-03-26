@@ -13,51 +13,78 @@
 
 #include <iostream>
 #include <iomanip>
-#include <set>
-#include "RBTree.h"
-#include "BST.h"
+#include "mySet.h"
+#include <string>
 
 using namespace std;
 
 int main(){
-    bst_t bst;
-    bst.insert(5);
-    bst.insert(12);
-    bst.insert(54);
-    cout << bst.exists(5) << endl;
+
+    Set<int, 30> s;
+    s.insert(234);
+    s.insert(23);
+    s.insert(34);
+    s.insert(24);
+    s.insert(4);
+    s.insert(3);
+    s.insert(2);
+    s.insert(654);
+    s.insert(44);
+    s.insert(21);
+    s.insert(4324);
+    s.insert(534534);
+    s.insert(6544);
+    s.insert(446);
+    s.insert(213);
+    s.insert(43324);
+    s.insert(5364534);
+    s.insert(64);
+    s.insert(414);
+    s.insert(251);
+    s.insert(46324);
+    s.insert(5734534);
+    s.insert(6544);
+    s.insert(448);
+    s.insert(2185);
+    s.insert(4325564);
+    s.insert(5345364);
+    
+    for(auto& it : s)
+        cout << it << endl;
+    
+    Set<char, 10> sc;
+    sc.insert('a');
+    sc.insert('c');
+    sc.insert('A');
+    sc.insert('f');
+    sc.insert('G');
+    sc.insert('q');
+    sc.insert('R');
+    sc.insert('g');
+    sc.insert('L');
+    sc.insert('L');
+    sc.insert('S');
+    
+    for (auto& it: sc)
+        cout << it << endl;
+    
+    cout << sc.find('L') << endl;
+    
+    
+    Set<string, 10> ss;
+    ss.insert("float");
+    ss.insert("Road");    
+    ss.insert("Toad");
+    ss.insert("Snow");
+    ss.insert("yes");
+    ss.insert("no");
+    ss.insert("hello");
+    ss.insert("goodbye");
+    
+    for (auto & it: ss)
+        cout << it << endl;
+    
     
     return 0;
 }
 
-
-/*int main() {
-    int ch, y = 0;
-    RBtree obj;
-    do {
-        cout << "\n\t RED BLACK TREE ";
-        cout << "\n 1. Insert in the tree ";
-        cout << "\n 2. Delete a node from the tree";
-        cout << "\n 3. Search for an element in the tree";
-        cout << "\n 4. Display the tree ";
-        cout << "\n 5. Exit ";
-        cout << "\nEnter Your Choice: ";
-        cin>>ch;
-        switch (ch) {
-            case 1: obj.insert();
-                cout << "\nNode Inserted.\n";
-                break;
-            case 2: obj.del();
-                break;
-            case 3: obj.search();
-                break;
-            case 4: obj.disp();
-                break;
-            case 5: y = 1;
-                break;
-            default: cout << "\nEnter a Valid Choice.";
-        }
-        cout << endl;
-
-    } while (y != 1);
-    return 1;
-}*/

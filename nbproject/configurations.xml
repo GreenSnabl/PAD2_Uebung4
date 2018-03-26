@@ -4,9 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>BST.h</itemPath>
-      <itemPath>LeftLeaningRBTree.h</itemPath>
-      <itemPath>RBTree.h</itemPath>
       <itemPath>mySet.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -43,12 +40,6 @@
           <standard>11</standard>
         </ccTool>
       </compileType>
-      <item path="BST.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="LeftLeaningRBTree.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="RBTree.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mySet.h" ex="false" tool="3" flavor2="0">
@@ -75,12 +66,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="BST.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="LeftLeaningRBTree.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="RBTree.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mySet.h" ex="false" tool="3" flavor2="0">

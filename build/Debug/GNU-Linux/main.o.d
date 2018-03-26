@@ -1,5 +1,3 @@
-build/Debug/GNU-Linux/main.o: main.cpp RBTree.h BST.h
+build/Debug/GNU-Linux/main.o: main.cpp mySet.h
 
-RBTree.h:
-
-BST.h:
+mySet.h:
