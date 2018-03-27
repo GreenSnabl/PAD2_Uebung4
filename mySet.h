@@ -82,6 +82,44 @@ public:
         return m_data[index];
     }
 
+    Set<value_type, MAX*2> operator+(const Set<value_type, MAX>& rhs) 
+        {
+            Set<value_type, MAX*2> res;
+            for (int i = 0; i < m_size; ++i)
+            {
+                res.insert(m_data[i]);
+            }
+            for (int i = 0; i < rhs.size(); ++i)
+            {
+                res.insert(rhs[i]);
+            }
+            return res;
+        }
+    
+    
+    Set<value_type, MAX> operator-(const Set<value_type, MAX>& rhs)
+    {
+        Set<value_type,MAX> res;
+        for (int i = 0; i < m_size; ++i)
+        {
+            if (!rhs.find(m_data[i]))
+                res.insert(m_data[i]);        
+        }
+        return res;
+    }
+        
+    Set<value_type, MAX>& operator=(const Set<value_type, MAX>& rhs)
+    {
+        this->m_size = rhs.m_size;
+        for (int i = 0; i < rhs.size(); ++i)
+        {
+            this->m_data[i] = rhs[i]; 
+        }
+        return *this;
+    }
+    
+        
+    
 
     class Iterator;
 
@@ -125,6 +163,8 @@ public:
             return m_set[m_index];
         }
 
+
+        
     private:
         int m_index;
         Set<value_type, MAX>& m_set;

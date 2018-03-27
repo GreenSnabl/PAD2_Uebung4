@@ -85,6 +85,30 @@ int main(){
         cout << it << endl;
     
     
+    Set<int, 4> si;
+    Set<int, 4> sj;
+    Set<int, 8> sk;
+    Set<int, 4> sl;
+    
+    si.insert(2);
+    si.insert(3);
+    si.insert(5);
+    si.insert(34);
+    sj.insert(4);
+    sj.insert(3);
+    sj.insert(5);
+    sj.insert(9);
+    
+    sk = sj + si;
+    sl = sj - si;
+  
+    for (auto& it : sk)
+        cout << it << endl;
+    cout << endl;
+    
+    for (auto& it : sl)
+        cout << it << endl;
+    
     return 0;
 }
 
